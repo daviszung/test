@@ -12,16 +12,3 @@ Bun.serve({
 });
 
 console.log("serving on port 3000\n");
-
-import fs from 'fs';
-import http from 'http';
-
-const port = 3000;
-http.createServer((req, res) => {
-  if (req.url === '/') {
-    res.setHeader('content-type', 'text/html');
-    res.end(fs.readFileSync('index.html'));
-  }
-}).listen(port, () => {
-  console.log(`listening on port 3000`)
-});
