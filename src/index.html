@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-<html class="h-full">
+<html class="h-full overflow-auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <script defer src="/dist/main.js"></script>
   </head>
-  <body class="bg-orange-100 h-full overflow-x-hidden flex flex-col">
+  <body class="bg-orange-100 overflow-x-hidden flex flex-col">
     <nav
       class="top-0 flex items-center justify-between flex-wrap bg-blue-500 p-6"
     >
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <svg
-          class="fill-current h-8 w-8 mr-2"
-          width="54"
-          height="54"
-          viewBox="0 0 54 54"
-          xmlns="http://www.w3.org/2000/svg"
+        <span class="font-semibold text-xl tracking-tight"
+          >Clean Ocean Action</span
         >
-          <path
-            d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
-          />
-        </svg>
-        <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
       </div>
       <div id="burger" onclick="openMenu()" class="block lg:hidden">
         <button
@@ -39,7 +30,7 @@
         </button>
       </div>
       <div
-        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto sm:hidden font-semibold"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden sm:hidden font-semibold"
       >
         <div class="text-sm lg:flex-grow justify-end flex">
           <div class="[&:has(a:hover)]:text-blue-300 text-white gap-8 flex">
@@ -72,7 +63,7 @@
         </div>
       </div>
     </nav>
-    <main class="flex flex-col h-full">
+    <main class="flex flex-col items-center mx-10 xl:text-xl">
       <nav
         id="navMenu"
         class="lg:hidden bg-blue-600 fixed right-0 gap-1 top-0 h-full flex-grow-[10] overflow-y-auto transition-transform translate-x-full w-5/12 duration-700 ease-in-out flex-col flex"
@@ -98,28 +89,291 @@
             </svg>
           </button>
         </div>
-        <a class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer">
-          <div class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"></div>
+        <a
+          class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer"
+        >
+          <div
+            class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"
+          ></div>
           <p class="relative z-10 px-4">About</p>
         </a>
-        <a class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer">
-          <div class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"></div>
+        <a
+          class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer"
+        >
+          <div
+            class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"
+          ></div>
           <p class="relative z-10 px-4">Programs</p>
         </a>
-        <a class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer">
-          <div class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"></div>
+        <a
+          class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer"
+        >
+          <div
+            class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"
+          ></div>
           <p class="relative z-10 px-4">Media</p>
         </a>
-        <a class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer">
-          <div class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"></div>
+        <a
+          class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer"
+        >
+          <div
+            class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"
+          ></div>
           <p class="relative z-10 px-4">Volunteer</p>
         </a>
-        <a class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer">
-          <div class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"></div>
+        <a
+          class="text-white text-2xl font-bold w-full group relative py-4 cursor-pointer"
+        >
+          <div
+            class="group-hover:w-full w-0 group-hover:h-full bg-gradient-to-r inset-0 absolute from-blue-500 transition-all duration-500"
+          ></div>
           <p class="relative z-10 px-4">Donate</p>
         </a>
       </nav>
-      <h1 class="text-lg font-semibold">Test text</h1>
+      <h1 class="text-3xl font-bold text-center my-4">Clean Ocean Action</h1>
+      <div class="text-center">
+        <h3 class="text-xl my-3 font-semibold">
+          "Our goal is to improve the degraded water quality of the marine
+          waters off the New Jersey/New York coast."
+        </h3>
+        <p>
+          COA uses research, education, and citizen action to unite and empower
+          people to protect the ocean.
+        </p>
+        <i>Clean Ocean Action is a 501(c)3 tax exempt nonprofit organization</i>
+      </div>
+      <hr class="h-[2px] w-1/2 bg-gray-700 my-3" />
+      <div class="my-4">
+        <b>Clean Ocean Action</b> is a leading national and regional voice
+        working to protect waterways using science, law, research, education,
+        and citizen action.
+      </div>
+      <div class="grid grid-cols-1 xl:grid-cols-2 m-4 gap-10">
+        <div class="py-4 xl:px-32">
+          <p class="text-xl font-semibold">Our Successful Campaigns Include:</p>
+          <ul class="list-disc">
+            <li>
+              Improve Programs and laws that protect public health at swimming
+              beaches.
+            </li>
+            <li>
+              Reduce plastics and litter that pollute waterways, spoil beautiful
+              beaches, and harm or kill marine life including turtles, whales,
+              seals, birds, and fish.
+            </li>
+            <li>
+              Protect coasts from oil and gas drilling in the ocean, including
+              Maine to florida.
+            </li>
+            <li>
+              Establish the nation's first
+              <a
+                class="text-blue-600 underline"
+                href="https://cleanocean.wordpress.com/"
+                >Clean Ocean Zone</a
+              >
+              to start a national chain reaction for all coasts.
+            </li>
+            <li>
+              Reduce toxins in waterways to ensure fish and shellfish are free
+              of pollution and safe to eat.
+            </li>
+            <li>Educate and motivate citizens from the small to the tall.</li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-6 py-4 xl:px-32">
+          <p>
+            Clean Ocean Action (COA) is a broad-based coalition of 125 active
+            boating, business, community, conservation, diving, environmental,
+            fishing, religious, service, student, surfing, and women's groups.
+            These "Ocean Wavemakers" work to clean up and protect the waters of
+            the New York Bight. The groups came together in 1984 to investigate
+            sources, effects, and solutions of ocean pollution. What follows is
+            a description of the network.
+          </p>
+          <p>
+            Under the guidance of COA's
+            <a
+              class="text-blue-600 underline"
+              href="https://cleanoceanaction.org/about-coa/board-of-trustees"
+              >Board of Trustees</a
+            >,
+            <a
+              class="text-blue-600 underline"
+              href="https://cleanoceanaction.org/about-coa/staff"
+              >COA's staff</a
+            >
+            researches pollution issues affecting the marine environment, then
+            formulates policy and campaigns to eliminate each pollution source.
+            The staff then coordinates and organizes the Ocean Wavemakers (<a
+              class="text-blue-600 underline"
+              href="https://cleanoceanaction.org/about-coa/ocean-wavemakers/participating-organizations"
+              >Participating Organizations</a
+            >,
+            <a
+              class="text-blue-600 underline"
+              href="https://cleanoceanaction.org/about-coa/ocean-wavemakers/concerned-businesses"
+              >Concerned Businesses</a
+            >, Educators for a Clean Ocean, and
+            <a
+              class="text-blue-600 underline"
+              href="https://cleanoceanaction.org/about-coa/ocean-wavemakers/concerned-citizens"
+              >Concerned Citizens</a
+            >
+            ) to use their individual experience and expertise to help. Press
+            events, rallies, writing letters, making phone calls, testifying at
+            public hearings, and distributing literature are just some of the
+            ways members of the coalition become involved.
+          </p>
+          <p>
+            With eight ocean dumpsites closed, powerful new clean water laws on
+            the books, and a greater public awareness of the ocean and its
+            improved health, it's clear the system works.
+          </p>
+          <a
+            class="text-blue-600 underline"
+            href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cleanoceanaction.org/fileadmin/editor_group2/General/COA30thTrueBlueBook_Final.pdf"
+            >Read About COA's 30 Years of Making Waves in the True Blue Book</a
+          >
+        </div>
+      </div>
     </main>
+
+    <footer class="bg-blue-500 dark:bg-gray-900 border-t-2 border-t-gray-200">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-white uppercase underline dark:text-white"
+            >
+              Follow us
+            </h2>
+            <ul class="text-white dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a
+                  href="https://github.com/themesberg/flowbite"
+                  class="hover:underline"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://discord.gg/4eeurUVvTy"
+                  class="hover:underline"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://discord.gg/4eeurUVvTy"
+                  class="hover:underline"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="text-white font-medium">
+            <div>
+              <h2
+                class="text-white uppercase underline font-semibold text-sm mb-6"
+              >
+                Headquarters
+              </h2>
+              <p class="mb-4">49 Avenel Blvd.</p>
+              <p class="mb-4">Long Branch, NJ 07704</p>
+            </div>
+            
+            </div>
+            <div class="text-white font-medium">
+              <h2
+                class="text-white uppercase underline font-semibold text-sm mb-6"
+              >
+                Field Office
+              </h2>
+              <p class="mb-4">Gateway national Recreation Area</p>
+              <p class="mb-4">Sandy Hook, New Jersey</p>
+            </div>
+          <div class="text-white font-medium">
+            <div>
+              <h2 class="text-white uppercase underline font-semibold text-sm mb-6">Contact</h2>
+              <p class="mb-4">Voice: (732) 872-0111</p>
+              <p class="mb-4">FAX: (732) 872-8041</p>
+              <p class="mb-4 hover:underline break-words"><a href="mailto:Info@CleanOceanAction.org" title="Info@CleanOceanAction.org">Info@CleanOceanAction.org</a></p>
+            </div>
+          </div>
+          <div class="text-white font-medium">
+            <div>
+              <h2 class="text-white uppercase underline font-semibold text-sm mb-6">Other</h2>
+              <p class="mb-4 hover:underline"><a href="https://cleanoceanaction.org/index.php?id=785">COA Financial Information</a></p>
+              <p class="mb-4 hover:underline"><a href="https://cleanoceanaction.org/index.php?id=335">Privacy/Sharing Policies</a></p>
+              <p class="mb-4 hover:underline"><a href="mailto:Website@CleanOceanAction.org">Website Questions/Comments</a></p>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+            <a
+              href="#"
+              class="text-white hover:scale-125 transition-all ease-in-out dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              class="text-white hover:scale-125 transition-all ease-in-out dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              class="text-white hover:scale-125 transition-all ease-in-out dark:hover:text-white"
+            >
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
